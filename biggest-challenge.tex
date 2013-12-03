@@ -1,0 +1,47 @@
+\documentclass[xetex]{beamer}
+\usepackage{fontspec}
+\usepackage{xltxtra}
+\usepackage{xunicode}
+\usepackage{polyglossia}
+%\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{pgfpages}
+\usepackage{unicode-math}
+\usepackage{amsmath}
+
+\usepackage{takahashi}
+\newcommand{\stack}[1]{\begin{tabular}{@{}c@{}}#1\end{tabular}}
+
+% make pgfpages and xelatex play nicely together.
+% I don't know why this works, the Internet told me to do it.
+\renewcommand\pgfsetupphysicalpagesizes{%
+    \pdfpagewidth\pgfphysicalwidth\pdfpageheight\pgfphysicalheight%
+}
+
+\usefonttheme{professionalfonts}
+\setmathfont{Asana Math}
+\setsansfont{Myriad Pro}
+\setdefaultlanguage{english}
+\usecolortheme{crane}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{caption}[numbered]
+\setbeameroption{show notes on second screen=right}
+
+\title[Biggest Challenge]{Biggest Challenge: Dataflow in Meetup for Android}
+\author{Mike Castleman}
+\institute[Meetup]{Meetup}
+\date[2013-12-3]{December 3, 2013}
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}
+\frametitle{Stay in touch}
+\begin{itemize}
+\item Email: \texttt{mlc@meetup.com}
+\item Twitter: \texttt{@vermicelli}
+\end{itemize}
+\end{frame}
+\end{document}
